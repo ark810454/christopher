@@ -717,7 +717,6 @@ p{
   border-radius: 16px;
   padding: 10px;
   margin: 20px 0;
-  display: none;
 }
 
 .Allworks .swiper-slide{
@@ -788,37 +787,7 @@ p{
   
 
 }
-.autoplay-progress {
-  position: absolute;
-  right: 16px;
-  bottom: -5px;
-  z-index: 10;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--primary);
-  z-index: 11111;
-}
 
-
-.autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  stroke-width: 4px;
-  stroke: var(--primary);
-  fill: none;
-  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
-}
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--tertiary); /* Couleur de la balle active de pagination */
 }
@@ -944,6 +913,15 @@ footer h1 a{
   height: 100%;
   object-fit: contain;
 }
+::-webkit-scrollbar{
+  background: none;
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #91760155;
+  
+}
 @media screen and (max-width: 1100px) {
   header .header .block1 p{
     overflow: hidden;
@@ -954,7 +932,6 @@ footer h1 a{
   }
   .containerSkills{
     width: 96%;
-
   }
   .works{
     margin-top: 150px;
@@ -989,10 +966,11 @@ footer h1 a{
     position: relative;
   }
   #header .block2 img{
-    height: 80vh;
-    width: auto;
-    margin-top: 20px;
     object-fit: contain;
+  }
+  #header .block2{
+   align-items: end;
+    margin-top: 40px;
   }
   #about .block2 img{
     margin-bottom: 20px;
@@ -1018,9 +996,11 @@ footer h1 a{
   .containerSkills{
     overflow-x: scroll;
     gap: 20px;
+   
   }
   .cardSkill{
     min-width: 150px;
+     margin-bottom: 16px;
   }
   .containContact .cont1{
     gap: 8px;
@@ -1028,7 +1008,9 @@ footer h1 a{
   .contact{
     width: 96%;
   }
- 
+  .works, .contact{
+    margin-top: -50px;
+  }
   
 }
 
@@ -1341,7 +1323,7 @@ footer h1 a{
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 33;
+  z-index: 33333333;
 }
 .loaderMain .loadContainer{
   width: 3.1rem;
@@ -1350,13 +1332,9 @@ footer h1 a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;z-index: 555555555555555555;
 }
 .loaderMain .bg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+ object-fit: cover;
   width: 100%;height: 100%;
 }

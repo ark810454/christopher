@@ -690,8 +690,6 @@
 <script src="swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
-  const progressCircle = document.querySelector(".autoplay-progress svg");
-  const progressContent = document.querySelector(".autoplay-progress span");
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 20,
     slidesPerView: 3,
@@ -733,14 +731,7 @@
                 slidesPerView: 3,
                 spaceBetween: 20
             }
-        },
-
-    on: {
-      autoplayTimeLeft(s, time, progress) {
-        progressCircle.style.setProperty("--progress", 2 - progress);
-        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-      }
-    }
+        }
   });
 </script>
 </body>

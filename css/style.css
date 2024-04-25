@@ -919,11 +919,13 @@ footer h1 a{
 }
 ::-webkit-scrollbar{
   background: none;
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
+  
 }
 ::-webkit-scrollbar-thumb{
   background-color: #91760155;
+  border-radius: 1px;
   
 }
 @media screen and (max-width: 1100px) {

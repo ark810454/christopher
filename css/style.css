@@ -719,7 +719,7 @@ p{
   margin: 20px 0;
 }
 
-.Allworks .swiper-slide{
+.Allworks .swiper-slide, .Allworksweb .swiper-slide,.Allworksmobile .swiper-slide,.Allworksdesk .swiper-slide{
   display: flex;
   align-items: center;
   justify-content: center;
